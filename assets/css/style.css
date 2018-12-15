@@ -1,0 +1,971 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+/*
+==========================================
+    Google Fonts
+==========================================
+*/
+/*font-family: 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,400,500i,600,600i,700');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+html, body{
+	height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+.section-padding{
+	padding: 80px 0px;
+}
+
+.content-top-space{
+	margin-top: 70px;
+}
+
+/*
+==========================================
+    Header Menu Css
+==========================================
+*/
+
+
+.header-main {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+.header-main:after {
+    background: #393838;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    opacity: .49;
+    z-index: -1;
+}
+
+.main-menu ul li {
+    float: left;
+    margin-left: 26px;
+}
+
+.main-menu ul li a {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 38px 0px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.main-menu ul {
+    float: right;
+}
+
+.logo img {
+    margin-top: 15px;
+}
+
+.main-menu ul li a:hover {
+    color: #FC7292;
+}
+
+
+
+/*
+==========================================
+    Header img CSS
+==========================================
+*/
+.header-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: url(../img/header-img.jpg);
+	height: 100%;
+	position: relative;
+	background-attachment: fixed;
+	z-index: 2;
+}
+
+.header-img:after{
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #252525;
+	opacity: .42;
+	z-index: -1;
+}
+
+.d-table{
+	height: 100%;
+	display: table;
+	text-align: center;
+	width: 100%;
+}
+
+.d-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.header-img .container ,
+.header-img .row ,
+.header-img .col-md-12 {
+	height: 100%;
+}
+
+.header-content {
+    color: #fff;
+    margin-top: 95px;
+}
+
+.header-content h1 {
+	font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.header-content h1 span {
+    color: #FE3209;
+    font-weight: 700;
+}
+
+.header-content p {
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 850px;
+    margin: 22px auto 33px auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-content a {
+    transition: .3s;
+    padding: 9px 32px;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #FE3209;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+}
+.header-content a:hover {
+    background: #fff;
+    color: #FE3209;
+}
+
+
+/*
+==========================================
+    About Section CSS
+==========================================
+*/
+
+.nandine-about{
+	background: #F6F6F6;
+}
+
+
+.section-header h2 span {
+    color: #FF0000;
+}
+
+.section-header h2 {
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+.section-header h2:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    margin-left: -78px;
+    width: 156px;
+    left: 50%;
+    background: #FF0000;
+    top: 100%;
+    margin-top: 8px;
+}
+
+.section-header h2:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FF0000;
+    top: 100%;
+    left: 50%;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: -8px;
+}
+
+
+.about-left img {
+    width: 100%;
+    height: auto;
+}
+
+.about-left {
+    position: relative;
+}
+
+.about-left-details {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.about-left-details:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background: #3C464C;
+    z-index: -1;
+    opacity: 0.69;
+}
+
+.about-left-details h4 {
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about-left-details ul li {display: inline-block;}
+
+.about-left-details ul li a {
+    transition: .3s;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #38434B;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.about-left-details {
+    padding: 12px 0;
+}
+
+
+.about-left-details ul li a:hover {
+    background: #fff;
+    color: #384349;
+}
+
+.about-right h3 {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-right p {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 27px;
+    margin-top: 25px;
+    color: #1E1E1E;
+}
+
+
+
+.about-right p strong {
+    color: black;
+}
+
+.about-right a {
+    border-radius: 3px;
+    border: 1px solid red;
+    transition: .3s;
+    background: #FF0000;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 22px;
+    margin-top: 30px;
+}
+
+.about-right a:hover {
+    background: #fff;
+    color: red;
+    border: 1px solid red;
+}
+
+
+/*
+==========================================
+    Video Area CSS
+==========================================
+*/
+
+.video-area{
+	background:url(../img/vdio-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	background-attachment: fixed;
+}
+
+.video-area:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: #000000;
+    opacity: .60;
+    z-index: -1;
+}
+
+.text h2 {
+    font-weight: 700;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.icon a {
+    transition: .3s;
+    margin-top: 40px;
+    font-size: 32px;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 90px;
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 10px;
+}
+
+.icon a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*
+==========================================
+    Service Area CSS
+==========================================
+*/
+
+
+.services-box {
+    margin-top: 70px;
+}
+
+
+.services-box i {
+    color: #ff0000;
+    font-size: 48px;
+}
+
+.services-box h4 {
+    color: #151515;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    margin: 13px 0;
+}
+
+.services-box p {
+    color: #252525;
+    line-height: 24px;
+}
+
+
+/*
+==========================================
+    Skill Area CSS
+==========================================
+*/
+
+
+.skill{
+	background: #F3F3F3;
+}
+
+.skill-left h4 {
+    color: #151515;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skill-left p {
+    font-weight: 300;
+    color: #515151;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+.skill-left p:last-child {
+    margin-top: 30px;
+}
+
+.skill-right h3 {
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #1b1b1b;
+}
+
+.skill-right p {
+    margin-top: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #2c2b2b;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nandini-skill-bar {
+    margin-top: 30px;
+}
+
+
+
+
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 100%;
+    background: #000;
+    height: 27px;
+    border-radius: 35px;
+    width: 100%;
+}
+
+.skillbar-item h5 {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.skillbar-bar {
+    margin-left: 10px;
+    border-radius: 30px;
+    height: 10px;
+    width: 0px;
+    background: red !important;
+    display: inline-block;
+}
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    line-height: 26px;
+    color: #fff;
+}
+
+
+/*
+==========================================
+    Counter Area CSS
+==========================================
+*/
+
+.counter:after {
+    opacity: .40;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #252525;
+}
+
+.counter-box i {
+    font-size: 22px;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.counter-number {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.counter-name {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.counter-box {font-family: 'Raleway', sans-serif;}
+
+.counter {
+    background: url(../img/client-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+
+/*
+==========================================
+    Portfolio Area CSS
+==========================================
+*/
+
+
+.portfolio-menu {
+    text-align: center;
+}
+
+.portfolio-menu button {
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.portfolio-menu button:hover {
+    color: red;
+}
+
+.portfolio-item {
+    margin-top: 36px;
+    position: relative;
+    transition: .3s;
+}
+
+.portfolio-item img{
+	max-width: 100%;
+}
+
+.portfolio-item:hover .portfolio-item-hover i{
+	visibility: visible;
+	opacity: 1;
+}
+
+.portfolio-menu button:hover {
+    color: red;
+}
+
+
+.portfolio-item-hover i {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    background: rgba(253, 11, 34, 0.43);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+/*
+==========================================
+    Team Area CSS
+==========================================
+*/
+
+
+
+.team{
+	background: #E1E1DF;
+}
+
+.team-item{
+	position: relative;
+}
+
+.team-item-hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+    left: 0;
+}
+
+.team-item-hover:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: red;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+     transition: .3s;
+     cursor: pointer;
+}
+
+.team-item:hover .team-item-hover:after{
+	visibility: visible;
+	opacity: .44;
+
+}
+
+.team-hover-content {
+    padding: 10px 0;
+    background: #ff0000ed;
+    position: absolute;
+    width: 100%;
+    bottom: -68px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    transition: .3s;
+}
+
+.team-item:hover .team-hover-content{
+	bottom: 0;
+}
+
+.team-name {
+    text-transform: uppercase;
+}
+
+.team-hover-content ul li {
+    display: inline;
+}
+
+.team-hover-content ul li a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.team-hover-content ul {
+    margin-top: 4px;
+}
+
+
+/*
+==========================================
+    Testimonial Area CSS
+==========================================
+*/
+
+.testimonial {
+    background: url(../img/testimonial/testimonial-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+
+.item img {
+    width: auto !important;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
+.testimonial-name {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 12px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.testimonial:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .42;
+    z-index: -1;
+}
+
+.item p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*
+==========================================
+    Blog Area CSS
+==========================================
+*/
+
+
+
+
+.blog-item {
+    box-shadow: 0 0 15px #11120a5c;
+}
+
+.blog-item img {
+    max-width: 100%;
+    border-bottom: 8px solid #747474;
+}
+
+.blog-details {
+    padding: 19px 20px;
+}
+
+.blog-title {
+    font-size: 24px;
+    color: #433F3F;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.date {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.blog-details p {
+    line-height: 24px;
+    color: #433f3f;
+}
+
+.blog-details a {
+    border: 1px solid #000;
+    transition: .3s;
+    text-decoration: none;
+    background: #252514;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin-top: 14px;
+}
+
+.blog-details a:hover {
+    background: transparent;
+    color: #000;
+}
+
+
+/*
+==========================================
+    Contact Area CSS
+==========================================
+*/
+
+.contact {
+    background: url(../img/contact-us.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    background-attachment: fixed;
+}
+
+.contact:after{
+	position: absolute;
+	width: 100%;
+	content: "";
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: #000;
+	opacity: .55;
+}
+
+.contact-heading{
+	color: #fff;
+}
+
+.contact input {
+    background: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 25PX;
+    height: 42px;
+}
+
+.contact textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 180px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+}
+
+.contact button {
+    transition: .3s;
+    background: red;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 32px;
+}
+
+.contact button:hover {
+    background: #fff;
+    color: red;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder
+ {
+    color: #fff;
+}
+
+
+/*
+==========================================
+    Footer Area CSS
+==========================================
+*/
+
+
+.footer {
+    background: #121111;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-icon ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-icon ul li:last-child {
+    margin-right: 0px;
+}
+
+.footer-icon ul li a {
+    color: #fff;
+}
+
+
+
+/*
+==========================================
+    Responsive Menu CSS (Bootstrap Customize)
+==========================================
+*/
+
+nav.navbar.navbar-expand-lg.main-menu {
+    padding: 0;
+}
+
+.main-menu ul {
+    margin-left: auto;
+}
+
+@media (max-width: 991px){
+	button i {
+    background: #000;
+    color: #fff;
+    padding: 7px 16px;
+	}
+	.main-menu ul {
+    background: #00000069;
+    width: 100%;
+	}
+	.main-menu ul li a {
+	    padding: 10px;
+	}
+}
